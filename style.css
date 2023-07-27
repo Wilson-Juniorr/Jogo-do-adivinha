@@ -1,0 +1,108 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body{
+  background: linear-gradient(315deg, #C2E9FB 0%, #A1C4FD 100%);
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+button {
+  background: #7879F1;
+  color: white;
+  border-radius: 0px 4px 4px 0px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: saturate(300%);
+}
+
+.hide {
+  display: none;
+}
+
+body, button, input {
+  font-family: 'DM Sans', sans-serif;
+}
+
+main {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  border-radius: .6rem;
+  background: #FFF;
+  box-shadow: 0rem .2rem .4rem 0rem rgba(0, 0, 0, 0.10);
+  width: min(42.5rem, 90%); 
+  margin-top: -12rem; 
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+  color: #34355B;
+}
+
+p {
+  color: rgba(52, 53, 91, 0.80)
+}
+
+form {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+appearance: none;
+}
+
+input, button {
+  border: none;
+  padding: 1.6rem;
+}
+
+input {
+  background: #DCE2E9;
+  border-radius: 4px 0px 0px 4px;
+  width: 5.5rem;
+  text-align: center;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.screen2 h2 {
+  color: #34355B;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.screen2 button{
+  border-radius: .4rem;
+  margin-top: 3.3rem;
+  animation: vibrate 0.8s infinite;
+}
+
+@keyframes vibrate {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px) rotate(1deg); }
+  50% { transform: translateX(2px) rotate(-1deg); }
+  75% { transform: translateX(-2px) rotate(1deg); }
+  100% { transform: translateX(2px) rotate(-1deg); }
+}
